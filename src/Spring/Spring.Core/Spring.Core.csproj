@@ -3,6 +3,7 @@
     <TargetFrameworks>netstandard2.0;$(TargetFullFrameworkVersion)</TargetFrameworks>
     <Description>Core functionality for Spring.Net IoC container</Description>
     <NoWarn>219, 162, 618, 1591</NoWarn>
+    <PackageId>D3S.Spring.Core</PackageId>
   </PropertyGroup>
   <PropertyGroup>
     <PreBuildEvent>rem $(ProjectDir)..\..\..\build-support\tools\antlr-2.7.6\antlr-2.7.6.exe -o $(ProjectDir)Expressions\Parser $(ProjectDir)Expressions\Expression.g

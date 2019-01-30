@@ -1,7 +1,7 @@
 #region License
 
 /*
- * Copyright © 2002-2011 the original author or authors.
+ * Copyright Â© 2002-2011 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -47,6 +47,8 @@ namespace Spring.Context.Support
     public class WebContextHandler : ContextHandler
     {
         private static readonly ILog Log = LogManager.GetLogger(typeof(WebContextHandler));
+
+        public statFunc<IApplicationContext, IApplicationContext> ChildContextWrapper { private get; set; }
 
         /// <summary>
         /// Sets default context type to <see cref="WebApplicationContext"/>
@@ -120,7 +122,10 @@ namespace Spring.Context.Support
             if (!vpath.EndsWith("/")) vpath = vpath + "/";
             using (new HttpContextSwitch(vpath))
             {
-                return base.InstantiateContext(parent, configContext, contextName, contextType, caseSensitive, resources);
+                var ctx = base.InstantiateContext(parent, configContext, contextName, contextType, caseSensitive, resources);
+                if (ChildContextWrapper != null)
+                    ctx = ChildContextWrapper(ctx);
+                return ctx;
             }
         }
 
