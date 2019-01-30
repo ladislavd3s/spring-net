@@ -3,7 +3,7 @@
         <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
         <Description>Integration package of Spring.Net IoC container with Asp.Net Core built-in IoC</Description>
         <NoWarn>219, 162, 618, 1591</NoWarn>
-        <PackageId>D3S.Spring.AspNetCore</PackageId>
+        <PackageId>Spring.AspNetCore</PackageId>
     </PropertyGroup>
     <PropertyGroup>
         <PreBuildEvent>rem $(ProjectDir)..\..\..\build-support\tools\antlr-2.7.6\antlr-2.7.6.exe -o $(ProjectDir)Expressions\Parser $(ProjectDir)Expressions\Expression.g
