@@ -99,6 +99,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spring.Benchmark", "test\Sp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{9537C677-ADE5-4503-AFD7-3E0C3B0960EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spring.AspNetCore", "src\Spring\Spring.AspNetCore\Spring.AspNetCore.csproj", "{00596169-13B7-444B-9C78-18C803E7AED7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|.NET = Debug|.NET
@@ -527,6 +529,18 @@ Global
 		{504F1D7B-C6AC-4128-9411-D680B3086662}.Release|Any CPU.Build.0 = Release|Any CPU
 		{504F1D7B-C6AC-4128-9411-D680B3086662}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{504F1D7B-C6AC-4128-9411-D680B3086662}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{00596169-13B7-444B-9C78-18C803E7AED7}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{00596169-13B7-444B-9C78-18C803E7AED7}.Debug|.NET.Build.0 = Debug|Any CPU
+		{00596169-13B7-444B-9C78-18C803E7AED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00596169-13B7-444B-9C78-18C803E7AED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00596169-13B7-444B-9C78-18C803E7AED7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{00596169-13B7-444B-9C78-18C803E7AED7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{00596169-13B7-444B-9C78-18C803E7AED7}.Release|.NET.ActiveCfg = Release|Any CPU
+		{00596169-13B7-444B-9C78-18C803E7AED7}.Release|.NET.Build.0 = Release|Any CPU
+		{00596169-13B7-444B-9C78-18C803E7AED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00596169-13B7-444B-9C78-18C803E7AED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00596169-13B7-444B-9C78-18C803E7AED7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{00596169-13B7-444B-9C78-18C803E7AED7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
