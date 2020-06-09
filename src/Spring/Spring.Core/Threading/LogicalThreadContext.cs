@@ -48,7 +48,8 @@ namespace Spring.Threading
         /// </remarks>
         private static IThreadStorage threadStorage =
 #if NETSTANDARD
-            new ThreadStaticStorage();
+            //new ThreadStaticStorage();
+            new AsyncLocalStorage();
 #else
             new CallContextStorage();
 #endif
